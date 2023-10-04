@@ -81,10 +81,26 @@ Main
     background-color: #008000;
 }
 
+.card__item__images {}
+
 
 .card__item__images img {
     width: 100%;
     display: block;
+}
+
+.card__item__image--hover {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+
+.card__item__image--hover:hover {
+    display: none;
+}
+
+.card__item__image--hover:hover {
+    position: absolute;
 }
 
 .card__item__image:hover {}
