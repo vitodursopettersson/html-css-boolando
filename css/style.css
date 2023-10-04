@@ -35,11 +35,14 @@ Main
 -----------
 */
 
+/* Container */
+
 .container {
     margin: 0 auto;
     width: 1200px;
-    background-color: red;
 }
+
+/* Card */
 
 .card {
     width: calc(100%/3);
@@ -49,6 +52,8 @@ Main
     position: relative;
 }
 
+/* Card item icon*/
+
 .card__item__favorite {
     position: absolute;
     right: 0;
@@ -57,6 +62,17 @@ Main
     padding: 8px 10px;
     font-size: 19px;
     z-index: 1;
+}
+
+.card__item__favorite i.fa-solid {
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+}
+
+.card__item__favorite i.fa-solid:hover {
+    opacity: 1;
+    transition: .1s ease;
 }
 
 .card__item__tag {
@@ -83,6 +99,8 @@ Main
     background-color: #008000;
 }
 
+/* Card item image */
+
 .card__item__images {}
 
 
@@ -97,8 +115,33 @@ Main
     opacity: 0;
 }
 
-
 .card__item__image--hover:hover {
     opacity: 1;
-    transition: .2s ease;
+    transition: 0.2s ease;
+}
+
+/* Card item info */
+
+h6.card__info__brand {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+h4.card__info__product {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+
+}
+
+h5.card__info__price {
+    font-size: 13px;
+    color: #FF0000;
+}
+
+span.card__info__sale {
+    color: black;
+    font-weight: 400;
+    text-decoration: line-through;
 }
