@@ -38,14 +38,19 @@ Main
 /* Container */
 
 .container {
-    margin: 0 auto;
-    width: 1200px;
+    margin: 40px auto;
+    max-width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Card */
 
 .card {
-    width: calc(100%/3);
+    width: 30%;
+    min-width: 300px;
+    padding: 8px;
 }
 
 .card__item {
@@ -122,6 +127,10 @@ Main
 
 /* Card item info */
 
+.card__info {
+    margin-bottom: 20px;
+}
+
 h6.card__info__brand {
     font-size: 12px;
     font-weight: 400;
@@ -144,4 +153,52 @@ span.card__info__sale {
     color: black;
     font-weight: 400;
     text-decoration: line-through;
+}
+
+/* 
+-----------
+Footer
+-----------
+*/
+
+footer {
+    background-color: #1A1A1A;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.container--footer {
+    width: 1220px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+footer .info ul {
+    display: flex;
+    gap: 10px;
+}
+
+footer .info li {
+    list-style: none;
+    font-size: 11px;
+}
+
+footer .social h4 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+footer .social__icon {
+    display: flex;
+    gap: 8px;
+    font-size: 18px;
+
 }
