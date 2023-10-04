@@ -9,3 +9,21 @@ Reset Default
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 
+++++++++++
+Debug
+++++++++++
+*/
+
+header.debug {
+    height: 50px;
+    background-color: #FF6901;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.debug img {
+    width: 140px;
+}
