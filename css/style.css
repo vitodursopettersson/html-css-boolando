@@ -56,6 +56,7 @@ Main
     background-color: #ffffff;
     padding: 8px 10px;
     font-size: 19px;
+    z-index: 1;
 }
 
 .card__item__tag {
@@ -67,6 +68,7 @@ Main
     color: #ffffff;
     font-size: 13px;
     font-weight: 600;
+    z-index: 1;
 }
 
 .card__item__tag>* {
@@ -91,16 +93,12 @@ Main
 
 .card__item__image--hover {
     position: absolute;
-    z-index: 0;
     top: 0;
+    opacity: 0;
 }
+
 
 .card__item__image--hover:hover {
-    display: none;
+    opacity: 1;
+    transition: .2s ease;
 }
-
-.card__item__image--hover:hover {
-    position: absolute;
-}
-
-.card__item__image:hover {}
