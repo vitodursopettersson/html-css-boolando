@@ -21,13 +21,18 @@ header {
     background-color: #FF6901;
     color: #ffffff;
     padding: 12px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
 
 .container--header {
-    max-width: 1080px;
+    max-width: 1220px;
     margin: 0 auto;
     display: flex;
-
 }
 
 .container--header>* {
@@ -77,20 +82,28 @@ Main
 
 /* Container */
 
+body {
+    margin-top: 70px;
+    padding-top: 30px;
+}
+
 .container {
     margin: 40px auto;
     max-width: 1220px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 /* Card */
 
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -10px;
+}
+
 .card {
-    width: 30%;
-    min-width: 300px;
-    padding: 8px;
+    width: calc((100% / 3) - 20px);
+    min-width: 250px;
+    margin: 10px;
 }
 
 .card__item {
@@ -107,6 +120,7 @@ Main
     padding: 8px 10px;
     font-size: 19px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .card__item__favorite i.fa-solid {
@@ -146,8 +160,6 @@ Main
 
 /* Card item image */
 
-.card__item__images {}
-
 
 .card__item__images img {
     width: 100%;
@@ -157,10 +169,11 @@ Main
 .card__item__image--hover {
     position: absolute;
     top: 0;
+    left: 0;
     opacity: 0;
 }
 
-.card__item__image--hover:hover {
+.card__item__images:hover .card__item__image--hover {
     opacity: 1;
     transition: 0.2s ease;
 }
@@ -208,7 +221,7 @@ footer {
 }
 
 .container--footer {
-    width: 1080px;
+    max-width: 1220px;
     margin: auto;
     display: flex;
     justify-content: space-between;
